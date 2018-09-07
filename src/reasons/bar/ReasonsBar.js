@@ -1,15 +1,46 @@
 import React, { Component, Fragment } from 'react'
+import { sortBy } from 'lodash'
 import ThemeSwitcher from '../../components/ThemeSwitcher'
+import Filters from '../../components/Filters'
+import Switch from '../../components/Switch'
 import PeriodicTableElement from '../../components/PeriodicTableElement'
 import { ResponsiveBar } from '@nivo/bar'
 import data from '../reasonsData'
 
 export default class ReasonsBar extends Component {
+    state = {
+        sortByRank: false,
+    }
+
+    handleSortSwitch = sortByRank => {
+        this.setState({ sortByRank })
+    }
+
     render() {
+        const { sortByRank } = this.state
+
+        let positiveData
+        let negativeData
+        if (sortByRank === true) {
+            positiveData = sortBy(data.positive, d => d.count)
+            negativeData = sortBy(data.negative, d => d.count)
+        } else {
+            positiveData = [...data.positive].reverse()
+            negativeData = [...data.negative].reverse()
+        }
+
         return (
             <ThemeSwitcher>
                 {({theme}) => (
                     <Fragment>
+                        <Filters>
+                            <Switch
+                                id="sortByRank"
+                                label="sort by rank"
+                                checked={sortByRank}
+                                onChange={this.handleSortSwitch}
+                            />
+                        </Filters>
                         <div
                             style={{
                                 display: 'grid',
@@ -35,7 +66,7 @@ export default class ReasonsBar extends Component {
                                     reverse={true}
                                     theme={theme}
                                     colors={theme.satisfactionColors[1]}
-                                    data={[...data.negative].reverse()}
+                                    data={negativeData}
                                     padding={0.8}
                                     borderRadius={2.5}
                                     keys={['count']}
@@ -71,7 +102,7 @@ export default class ReasonsBar extends Component {
                                     labelSkipWidth={36}
                                     theme={theme}
                                     colors={theme.satisfactionColors[0]}
-                                    data={[...data.positive].reverse()}
+                                    data={positiveData}
                                     padding={0.8}
                                     borderRadius={2.5}
                                     keys={['count']}

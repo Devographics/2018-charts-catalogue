@@ -4,5 +4,28 @@
   "main": "index.js",
   "author": "Raphaël Benitte",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@storybook/addon-backgrounds": "^3.4.10",
+    "@storybook/addon-info": "^3.4.10",
+    "@storybook/addon-knobs": "^3.4.10",
+    "@storybook/react": "^3.4.10",
+    "babel-core": "^6.26.3",
+    "gh-pages": "^1.2.0",
+    "react-storybook-addon-chapters": "^2.1.7"
+  },
+  "dependencies": {
+    "@nivo/bar": "^0.48.0",
+    "@nivo/radar": "^0.48.0",
+    "@nivo/sankey": "^0.48.0",
+    "@nivo/waffle": "^0.48.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "scripts": {
+    "start": "start-storybook -p 9001 -c .storybook",
+    "build": "build-storybook",
+    "deploy": "gh-pages -d dist"
+  }
 }

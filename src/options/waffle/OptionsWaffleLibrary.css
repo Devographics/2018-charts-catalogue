@@ -1,0 +1,32 @@
+.options-waffle-library_title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.options-waffle-library_single {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 120px 32px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.options-waffle-library_multi {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 55px 55px 32px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.options-waffle-library_multi_year {
+    width: 32px;
+    line-height: 32px;
+    font-weight: 500;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    text-align: center;
+}

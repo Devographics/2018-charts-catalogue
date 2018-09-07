@@ -1,0 +1,14 @@
+.filters {
+    margin: 0 0 20px;
+    border: 1px dashed;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.theme-light .filters {
+    border-color: #c8c8c8;
+}
+
+.theme-dark .filters {
+    border-color: #515757;
+}

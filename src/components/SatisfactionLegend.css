@@ -1,0 +1,42 @@
+.satisfaction-legend {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    margin: 20px 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px dashed;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.theme-light .satisfaction-legend {
+    border-color: #c8c8c8;
+}
+
+.theme-dark .satisfaction-legend {
+    border-color: #515757;
+}
+
+.satisfaction-legend_item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.satisfaction-legend_item_chip {
+    flex-shrink: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: black;
+    margin-right: 12px;
+    border: 1px solid;
+}
+
+.theme-light .satisfaction-legend_item_chip {
+    border-color: rgba(0,0,0,.15);
+}
+
+.theme-dark .satisfaction-legend_item_chip {
+    border-color: #000;
+}

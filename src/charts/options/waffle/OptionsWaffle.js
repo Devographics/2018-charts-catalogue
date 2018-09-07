@@ -41,7 +41,7 @@ export default class OptionsWaffle extends Component {
                             {data.map(datum => (
                                 <OptionsWaffleLibrary
                                     key={datum.id}
-                                    datum={datum}
+                                    data={datum}
                                     compare={compare}
                                     theme={theme}
                                 />

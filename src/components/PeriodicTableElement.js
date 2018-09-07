@@ -3,7 +3,7 @@ import './PeriodicTableElement.css'
 
 export default class PeriodicTableElement extends PureComponent {
     render() {
-        const { id, size } = this.props
+        const { id, size, style, ...rest } = this.props
 
         return (
             <div
@@ -11,7 +11,9 @@ export default class PeriodicTableElement extends PureComponent {
                 style={{
                     width: size,
                     height: size,
+                    ...(style || {}),
                 }}
+                {...rest}
             >
                 <div
                     className="periodic-table-element_index"

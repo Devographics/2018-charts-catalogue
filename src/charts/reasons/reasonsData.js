@@ -64,7 +64,8 @@ export const reasonsEmojis = {
     'Other': '',
 }
 
-export default {
+export const generateLibraryData = lib => ({
+    id: lib,
     positive: positiveReasons.map(reason => ({
         reason,
         count: random(50, 10000),
@@ -73,4 +74,10 @@ export default {
         reason,
         count: random(50, 10000),
     })),
-}
+})
+
+const librariesData = ['Aurelia', 'Ember', 'Polymer', 'Backbone', 'Angular 2', 'Vue.JS', 'Angular 1', 'No Framework', 'React'].map(lib =>
+    generateLibraryData(lib)
+)
+
+export default librariesData

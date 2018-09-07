@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import ReasonsBar from '../src/charts/reasons/bar/ReasonsBar'
+import ReasonsBarDemo from '../src/charts/reasons/bar/ReasonsBarDemo'
 
 const stories = storiesOf('Reasons behind libraries result', module)
 
@@ -15,7 +15,7 @@ stories.addWithChapters(
             {
                 sections: [
                     {
-                        sectionFn: () => <ReasonsBar/>,
+                        sectionFn: () => <ReasonsBarDemo/>,
                     },
                 ],
             },

@@ -26,7 +26,8 @@ export const mapData = (data, year) => ({
             value: data[year].neverHeard,
         },
     ],
-    total: data[year].wouldUse +
+    total:
+        data[year].wouldUse +
         data[year].wouldNotUse +
         data[year].interested +
         data[year].notInterested +

@@ -6,11 +6,9 @@ import OptionsWaffle from '../src/charts/options/waffle/OptionsWaffle'
 
 const stories = storiesOf('Libraries result', module)
 
-stories.addWithChapters(
-    'Waffle',
-    {
-        subtitle: 'Library results using multiple waffle charts',
-        info: `
+stories.addWithChapters('Waffle', {
+    subtitle: 'Library results using multiple waffle charts',
+    info: `
             **[DISCLAIMER] this is a demo, the data shown here are fake and do not reflect actual survey results!**
         
             > A waffle chart shows progress towards a target or a completion percentage.
@@ -22,23 +20,20 @@ stories.addWithChapters(
             
             We can switch to comparison mode in order to compare with previous survey results.
         `,
-        chapters: [
-            {
-                sections: [
-                    {
-                        sectionFn: () => <OptionsWaffle/>,
-                    },
-                ],
-            },
-        ],
-    }
-)
+    chapters: [
+        {
+            sections: [
+                {
+                    sectionFn: () => <OptionsWaffle />,
+                },
+            ],
+        },
+    ],
+})
 
-stories.addWithChapters(
-    'Radar',
-    {
-        subtitle: 'Displaying selected options using a radar chart',
-        info: `
+stories.addWithChapters('Radar', {
+    subtitle: 'Displaying selected options using a radar chart',
+    info: `
             **[DISCLAIMER] this is a demo, the data shown here are fake and do not reflect actual survey results!**
 
             > Radar Charts are a way of comparing multiple quantitative variables.
@@ -49,19 +44,18 @@ stories.addWithChapters(
             
             > *from [datavizcatalogue](https://datavizcatalogue.com/)*
         `,
-        chapters: [
-            {
-                sections: [
-                    {
-                        title: 'For a single item',
-                        sectionFn: () => <OptionsRadarSingleItem/>,
-                    },
-                    {
-                        title: 'For several items in a category',
-                        sectionFn: () => <OptionsRadarMultiItems/>,
-                    },
-                ],
-            },
-        ],
-    }
-)
+    chapters: [
+        {
+            sections: [
+                {
+                    title: 'For a single item',
+                    sectionFn: () => <OptionsRadarSingleItem />,
+                },
+                {
+                    title: 'For several items in a category',
+                    sectionFn: () => <OptionsRadarMultiItems />,
+                },
+            ],
+        },
+    ],
+})

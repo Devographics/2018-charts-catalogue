@@ -5,10 +5,6 @@ export default class Filters extends PureComponent {
     render() {
         const { children } = this.props
 
-        return (
-            <div className="filters">
-                {children}
-            </div>
-        )
+        return <div className="filters">{children}</div>
     }
 }

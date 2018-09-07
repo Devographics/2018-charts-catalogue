@@ -23,10 +23,12 @@ export default class Switch extends PureComponent {
                         htmlFor={id}
                         className={`switch_container${checked ? ' _is-checked' : ''}`}
                     >
-                        <span className={`switch_pin${checked ? ' _is-checked' : ''}`}/>
+                        <span className={`switch_pin${checked ? ' _is-checked' : ''}`} />
                     </label>
                 </span>
-                <label className={`switch_label${checked ? ' _is-checked' : ''}`} htmlFor={id}>{label}</label>
+                <label className={`switch_label${checked ? ' _is-checked' : ''}`} htmlFor={id}>
+                    {label}
+                </label>
             </div>
         )
     }

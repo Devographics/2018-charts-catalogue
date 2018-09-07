@@ -35,6 +35,16 @@
     react-motion "^0.5.2"
     recompose "^0.26.0"
 
+"@nivo/heatmap@^0.48.0":
+  version "0.48.0"
+  resolved "https://registry.yarnpkg.com/@nivo/heatmap/-/heatmap-0.48.0.tgz#19fcf17d564ae6d30917178811ea47d45727688c"
+  dependencies:
+    "@nivo/core" "^0.48.0"
+    d3-scale "^2.1.2"
+    lodash "^4.17.4"
+    react-motion "^0.5.2"
+    recompose "^0.26.0"
+
 "@nivo/legends@^0.48.0":
   version "0.48.0"
   resolved "https://registry.yarnpkg.com/@nivo/legends/-/legends-0.48.0.tgz#5e7f60857e6cf8f4559b0d59308df6bbf7655313"
@@ -4872,6 +4882,10 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.17:
 prepend-http@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
+
+prettier@^1.14.2:
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.14.2.tgz#0ac1c6e1a90baa22a62925f41963c841983282f9"
 
 pretty-error@^2.0.2:
   version "2.1.1"

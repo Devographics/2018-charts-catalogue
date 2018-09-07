@@ -32,7 +32,9 @@ export default class ReasonsMirrorBar extends Component {
 
     getAxisTickLabel = (invert = false) => label => {
         if (this.props.withEmojis === true) {
-            return invert === true ? `${label} ${reasonsEmojis[label]}` : `${reasonsEmojis[label]} ${label}`
+            return invert === true
+                ? `${label} ${reasonsEmojis[label]}`
+                : `${reasonsEmojis[label]} ${label}`
         }
 
         return label
@@ -61,13 +63,9 @@ export default class ReasonsMirrorBar extends Component {
                     gridRowGap: '20px',
                 }}
             >
-                <div style={{ textAlign: 'right' }}>
-                    what people disliked about it
-                </div>
-                <div/>
-                <div>
-                    what people liked about it
-                </div>
+                <div style={{ textAlign: 'right' }}>what people disliked about it</div>
+                <div />
+                <div>what people liked about it</div>
                 <div style={{ height: negativeHeight }}>
                     <ResponsiveBar
                         layout="horizontal"

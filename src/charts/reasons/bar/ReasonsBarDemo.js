@@ -44,7 +44,7 @@ export default class ReasonsBarDemo extends Component {
 
         return (
             <ThemeSwitcher>
-                {({theme}) => (
+                {({ theme }) => (
                     <Fragment>
                         <Filters>
                             <Switch

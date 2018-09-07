@@ -24,20 +24,20 @@ export default class ThemeSwitcher extends Component {
         const theme = themeByName[themeName]
 
         return (
-            <div
-                className={`demo theme-${themeName}`}
-            >
+            <div className={`demo theme-${themeName}`}>
                 <header className="demo_header">
-                    <span/>
+                    <span />
                     <div className="theme-switch">
                         theme{' '}
-                        <span className="button" onClick={this.handleThemeSelection('light')}>light [2017]</span>{' '}
-                        <span className="button" onClick={this.handleThemeSelection('dark')}>dark [2018?]</span>
+                        <span className="button" onClick={this.handleThemeSelection('light')}>
+                            light [2017]
+                        </span>{' '}
+                        <span className="button" onClick={this.handleThemeSelection('dark')}>
+                            dark [2018?]
+                        </span>
                     </div>
                 </header>
-                <div className="demo_body">
-                    {children({ theme })}
-                </div>
+                <div className="demo_body">{children({ theme })}</div>
             </div>
         )
     }

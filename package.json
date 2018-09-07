@@ -13,10 +13,12 @@
     "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
     "gh-pages": "^1.2.0",
+    "prettier": "^1.14.2",
     "react-storybook-addon-chapters": "^2.1.7"
   },
   "dependencies": {
     "@nivo/bar": "^0.48.0",
+    "@nivo/heatmap": "^0.48.0",
     "@nivo/radar": "^0.48.0",
     "@nivo/sankey": "^0.48.0",
     "@nivo/stream": "^0.48.0",
@@ -30,6 +32,7 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "build-storybook",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "fmt": "prettier --color --write \"{src,stories}/**/*.js\" README.md"
   }
 }

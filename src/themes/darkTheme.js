@@ -8,15 +8,7 @@ export default {
         'rgb(255, 254, 199)',
         'rgb(216, 216, 216)',
     ],
-    salaryColors: [
-        '#8b8de8',
-        '#b3b5e6',
-        '#dedfec',
-        '#e4d6d9',
-        '#dc9eaa',
-        '#e28194',
-        '#ea2149',
-    ],
+    salaryColors: ['#8b8de8', '#b3b5e6', '#dedfec', '#e4d6d9', '#dc9eaa', '#e28194', '#ea2149'],
     axis: {
         domain: {
             line: {

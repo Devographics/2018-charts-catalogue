@@ -29,12 +29,6 @@ export default class OptionsWaffleLibrary extends PureComponent {
             )
         }
 
-        return (
-            <OptionsWaffleLibrarySingleYear
-                data={data}
-                year={'2018'}
-                theme={theme}
-            />
-        )
+        return <OptionsWaffleLibrarySingleYear data={data} year={'2018'} theme={theme} />
     }
 }

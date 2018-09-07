@@ -35,12 +35,7 @@ export default class OptionsWaffleLibraryMultiYears extends PureComponent {
                         />
                     </Fragment>
                 ))}
-                <PeriodicTableElement
-                    index={1}
-                    id="Br"
-                    label={data.id}
-                    size={32}
-                />
+                <PeriodicTableElement index={1} id="Br" label={data.id} size={32} />
                 <h3 className="options-waffle-library_title">{data.id}</h3>
             </div>
         )

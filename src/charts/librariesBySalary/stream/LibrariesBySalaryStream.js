@@ -18,12 +18,17 @@ export default class LibrariesBySalaryStream extends Component {
     render() {
         const { relative } = this.state
 
-        const normData = sortBy(data, 'average').map(d => d.bins.reduce((acc, s) => ({
-            ...acc,
-            id: d.id,
-            average: d.average,
-            [s.id]: s.count,
-        }), {}))
+        const normData = sortBy(data, 'average').map(d =>
+            d.bins.reduce(
+                (acc, s) => ({
+                    ...acc,
+                    id: d.id,
+                    average: d.average,
+                    [s.id]: s.count,
+                }),
+                {}
+            )
+        )
 
         return (
             <ThemeSwitcher>

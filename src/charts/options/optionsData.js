@@ -8,17 +8,17 @@ export const singleItemOptions = [
         React: 13,
     },
     {
-        id: 'heard about it, but don\'t want to learn it',
+        id: "heard about it, but don't want to learn it",
         React: 3,
     },
     {
         id: 'used it, want to use it again',
         React: 15,
         'used it, want to use it again': 15,
-        'used it, don\'t want to use it again': 12,
+        "used it, don't want to use it again": 12,
     },
     {
-        id: 'used it, don\'t want to use it again',
+        id: "used it, don't want to use it again",
         React: 12,
     },
 ]
@@ -37,7 +37,7 @@ export const multiItemsOptions = [
         ember: 2,
     },
     {
-        id: 'heard about it, but don\'t want to learn it',
+        id: "heard about it, but don't want to learn it",
         React: 3,
         Vue: 2,
         ember: 16,
@@ -49,7 +49,7 @@ export const multiItemsOptions = [
         ember: 1,
     },
     {
-        id: 'used it, don\'t want to use it again',
+        id: "used it, don't want to use it again",
         React: 12,
         Vue: 5,
         ember: 12,
@@ -191,7 +191,7 @@ export default [
             interested: 1328,
             notInterested: 3542,
             neverHeard: 4321,
-        }
+        },
     },
     {
         id: 'React',

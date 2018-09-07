@@ -56,7 +56,7 @@ export default class ReasonsMirrorBarNav extends Component {
                                 size: spring(60),
                                 top: spring(0),
                                 left: spring(10),
-                                opacity: spring(.6),
+                                opacity: spring(0.6),
                             }
                         } else if (item.isCurrent) {
                             style = {
@@ -70,7 +70,7 @@ export default class ReasonsMirrorBarNav extends Component {
                                 size: spring(60),
                                 top: spring(height - 60),
                                 left: spring(10),
-                                opacity: spring(.6),
+                                opacity: spring(0.6),
                             }
                         }
 

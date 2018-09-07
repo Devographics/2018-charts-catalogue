@@ -36,10 +36,10 @@ const OptionsRadarMultiItems = () => (
                                 on: 'hover',
                                 style: {
                                     itemTextColor: '#000',
-                                }
-                            }
-                        ]
-                    }
+                                },
+                            },
+                        ],
+                    },
                 ]}
                 theme={theme}
             />

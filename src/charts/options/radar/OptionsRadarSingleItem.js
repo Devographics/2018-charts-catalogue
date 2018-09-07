@@ -28,16 +28,11 @@ const OptionsRadarSingleItem = () => (
                         gridLabelOffset={14}
                         gridLabel={props => {
                             // id
-                            return (
-                                <circle
-                                    r={8}
-                                    fill="red"
-                                />
-                            )
+                            return <circle r={8} fill="red" />
                         }}
                     />
                 </div>
-                <SatisfactionLegend colors={theme.satisfactionColors}/>
+                <SatisfactionLegend colors={theme.satisfactionColors} />
             </Fragment>
         )}
     </ThemeSwitcher>

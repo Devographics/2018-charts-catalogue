@@ -61,7 +61,7 @@ export const reasonsEmojis = {
     'Diminishing momentum/popularity': '📉',
     'Limited & lacking in features': '🕹️',
     'Fast-changing & breaks often': '⚖️',
-    'Other': '',
+    Other: '',
 }
 
 export const generateLibraryData = lib => ({
@@ -76,8 +76,16 @@ export const generateLibraryData = lib => ({
     })),
 })
 
-const librariesData = ['Aurelia', 'Ember', 'Polymer', 'Backbone', 'Angular 2', 'Vue.JS', 'Angular 1', 'No Framework', 'React'].map(lib =>
-    generateLibraryData(lib)
-)
+const librariesData = [
+    'Aurelia',
+    'Ember',
+    'Polymer',
+    'Backbone',
+    'Angular 2',
+    'Vue.JS',
+    'Angular 1',
+    'No Framework',
+    'React',
+].map(lib => generateLibraryData(lib))
 
 export default librariesData

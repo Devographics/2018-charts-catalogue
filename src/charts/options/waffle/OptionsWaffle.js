@@ -20,7 +20,7 @@ export default class OptionsWaffle extends Component {
 
         return (
             <ThemeSwitcher>
-                {({theme}) => (
+                {({ theme }) => (
                     <Fragment>
                         <Filters>
                             <Switch
@@ -47,7 +47,7 @@ export default class OptionsWaffle extends Component {
                                 />
                             ))}
                         </div>
-                        <SatisfactionLegend colors={theme.satisfactionColors}/>
+                        <SatisfactionLegend colors={theme.satisfactionColors} />
                     </Fragment>
                 )}
             </ThemeSwitcher>

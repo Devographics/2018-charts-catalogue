@@ -26,6 +26,6 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "build-storybook",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d storybook-static"
   }
 }

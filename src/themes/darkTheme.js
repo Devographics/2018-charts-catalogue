@@ -32,6 +32,7 @@ export default {
         },
     },
     grid: {
+        stroke: '#444',
         line: {
             stroke: '#444',
         },

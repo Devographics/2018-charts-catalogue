@@ -9,6 +9,7 @@
     "@storybook/addon-backgrounds": "^3.4.10",
     "@storybook/addon-info": "^3.4.10",
     "@storybook/addon-knobs": "^3.4.10",
+    "@storybook/addon-options": "^3.4.10",
     "@storybook/react": "^3.4.10",
     "babel-core": "^6.26.3",
     "gh-pages": "^1.2.0",
@@ -19,6 +20,7 @@
     "@nivo/radar": "^0.48.0",
     "@nivo/sankey": "^0.48.0",
     "@nivo/waffle": "^0.48.0",
+    "lodash": "^4.17.10",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"

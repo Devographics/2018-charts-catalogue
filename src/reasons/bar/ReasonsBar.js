@@ -5,19 +5,32 @@ import Filters from '../../components/Filters'
 import Switch from '../../components/Switch'
 import PeriodicTableElement from '../../components/PeriodicTableElement'
 import { ResponsiveBar } from '@nivo/bar'
-import data from '../reasonsData'
+import data, { reasonsEmojis } from '../reasonsData'
 
 export default class ReasonsBar extends Component {
     state = {
         sortByRank: false,
+        withEmojis: false,
     }
 
     handleSortSwitch = sortByRank => {
         this.setState({ sortByRank })
     }
 
+    handleEmojisSwitch = withEmojis => {
+        this.setState({ withEmojis })
+    }
+
+    getAxisTickLabel = (invert = false) => label => {
+        if (this.state.withEmojis === true) {
+            return invert === true ? `${label} ${reasonsEmojis[label]}` : `${reasonsEmojis[label]} ${label}`
+        }
+
+        return label
+    }
+
     render() {
-        const { sortByRank } = this.state
+        const { sortByRank, withEmojis } = this.state
 
         let positiveData
         let negativeData
@@ -39,6 +52,13 @@ export default class ReasonsBar extends Component {
                                 label="sort by rank"
                                 checked={sortByRank}
                                 onChange={this.handleSortSwitch}
+                            />
+                            &nbsp;&nbsp;
+                            <Switch
+                                id="withEmojis"
+                                label="emojis"
+                                checked={withEmojis}
+                                onChange={this.handleEmojisSwitch}
                             />
                         </Filters>
                         <div
@@ -79,6 +99,7 @@ export default class ReasonsBar extends Component {
                                     axisLeft={{
                                         tickSize: 0,
                                         tickPadding: 10,
+                                        format: this.getAxisTickLabel(true),
                                     }}
                                 />
                             </div>
@@ -115,6 +136,7 @@ export default class ReasonsBar extends Component {
                                     axisRight={{
                                         tickSize: 0,
                                         tickPadding: 10,
+                                        format: this.getAxisTickLabel(),
                                     }}
                                     axisLeft={null}
                                 />

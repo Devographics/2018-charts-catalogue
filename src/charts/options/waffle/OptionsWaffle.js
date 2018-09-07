@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react'
-import ThemeSwitcher from '../../components/ThemeSwitcher'
-import Filters from '../../components/Filters'
-import Switch from '../../components/Switch'
-import SatisfactionLegend from '../../components/SatisfactionLegend'
+import ThemeSwitcher from '../../../components/ThemeSwitcher'
+import Filters from '../../../components/Filters'
+import Switch from '../../../components/Switch'
+import SatisfactionLegend from '../../../components/SatisfactionLegend'
 import OptionsWaffleLibrary from './OptionsWaffleLibrary'
 import data from '../optionsData'
 

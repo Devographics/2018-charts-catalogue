@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { ResponsiveRadar } from '@nivo/radar'
-import ThemeSwitcher from '../../components/ThemeSwitcher'
-import SatisfactionLegend from '../../components/SatisfactionLegend'
+import ThemeSwitcher from '../../../components/ThemeSwitcher'
+import SatisfactionLegend from '../../../components/SatisfactionLegend'
 import { singleItemOptions } from '../optionsData'
 
 const data = singleItemOptions

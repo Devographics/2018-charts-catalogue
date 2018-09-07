@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import OptionsRadarSingleItem from '../src/options/radar/OptionsRadarSingleItem'
-import OptionsRadarMultiItems from '../src/options/radar/OptionsRadarMultiItems'
-import OptionsWaffle from '../src/options/waffle/OptionsWaffle'
+import OptionsRadarSingleItem from '../src/charts/options/radar/OptionsRadarSingleItem'
+import OptionsRadarMultiItems from '../src/charts/options/radar/OptionsRadarMultiItems'
+import OptionsWaffle from '../src/charts/options/waffle/OptionsWaffle'
 
 const stories = storiesOf('Libraries result', module)
 

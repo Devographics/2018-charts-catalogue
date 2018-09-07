@@ -20,6 +20,7 @@ setAddon(chaptersAddon)
 function loadStories() {
     require('../stories/options')
     require('../stories/reasons')
+    require('../stories/librariesBySalary')
 }
 
 configure(loadStories, module)

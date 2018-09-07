@@ -1,16 +1,16 @@
 import React, { Component, Fragment } from 'react'
 import { sortBy } from 'lodash'
-import ThemeSwitcher from '../../components/ThemeSwitcher'
-import Filters from '../../components/Filters'
-import Switch from '../../components/Switch'
-import PeriodicTableElement from '../../components/PeriodicTableElement'
 import { ResponsiveBar } from '@nivo/bar'
+import ThemeSwitcher from '../../../components/ThemeSwitcher'
+import Filters from '../../../components/Filters'
+import Switch from '../../../components/Switch'
+import PeriodicTableElement from '../../../components/PeriodicTableElement'
 import data, { reasonsEmojis } from '../reasonsData'
 
 export default class ReasonsBar extends Component {
     state = {
-        sortByRank: false,
-        withEmojis: false,
+        sortByRank: true,
+        withEmojis: true,
     }
 
     handleSortSwitch = sortByRank => {

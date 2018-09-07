@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { ResponsiveWaffleCanvas } from '@nivo/waffle'
-import PeriodicTableElement from '../../components/PeriodicTableElement'
+import PeriodicTableElement from '../../../components/PeriodicTableElement'
 import './OptionsWaffleLibrary.css'
 
 const mapData = (datum, year) => ({

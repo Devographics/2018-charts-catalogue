@@ -1,6 +1,6 @@
 import React from 'react'
 import { Radar } from '@nivo/radar'
-import ThemeSwitcher from '../../components/ThemeSwitcher'
+import ThemeSwitcher from '../../../components/ThemeSwitcher'
 import { multiItemsOptions } from '../optionsData'
 
 const data = multiItemsOptions
